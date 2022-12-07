@@ -1,0 +1,103 @@
+/* <i class="fa-solid fa-delete-left"></i> */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #A3E4D7;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pantalla{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    border-radius: 15px;
+    width: 340px;
+    height: 680px;
+    background-color: #000;
+    border: 1px solid #333;
+}
+.visor{
+    color: #fff;
+    font-size: 50px;
+    outline: none;
+    border: none;
+    background-color: #333;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: inline-block;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 100px;
+    height: 50px;
+    text-align: right;
+}
+
+.delete{
+    grid-column-start: -2;
+    grid-column-end: 3;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    justify-items: end;
+}
+.btn-delete{
+    border: none;
+    background-color: #000;
+    grid-column-start: 2;
+}
+.fa-solid{
+    margin-bottom: 20px;
+    margin-right: 5px;
+    border: none;
+    margin-left: 10px;
+    color: rgb(40, 188, 40);
+    background-color: #000;
+    font-size: 50px;
+}
+.fa-solid:hover{
+    cursor: pointer;
+}
+.opciones{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+}
+.opciones .btn-opcion{
+    border: none;
+    color: #fff;
+    background-color: #1F1F1F;
+    text-align: center;
+    /* border-radius: 50%; */
+    font-weight: bold;
+    font-size: 25px;
+    padding: 15%;
+    margin: 5px;
+}
+#igual{
+grid-column-start: 3;
+grid-column-end: 5;
+}
+.simbol{
+color: #427E04 !important;
+}
+.btn-opcion:hover{
+    cursor: pointer;
+}
+.verde{
+    color: #c2ff80 !important;
+}
+.orange{
+    color: #F1766F !important;
+}
+.igual{
+    background-color: #427E04 !important;
+}
